@@ -1,6 +1,6 @@
 # personal-details-app
 
-Personas Details is a example of how to use Vue.js and Vuetify, with a simple CRUD (Create, read, update and delete) for personal data (Name, Last Name, Email and CI).
+Personal Details is a example of how to use Vue.js and Vuetify, with a simple CRUD (Create, read, update and delete) for personal data (Name, Last Name, Email and CI).
 
 The application created with the help of Vue CRUD works as a SPA (Single Page Application) and communicates with the server via the API.
 
