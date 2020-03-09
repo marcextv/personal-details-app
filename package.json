@@ -1,11 +1,22 @@
 {
   "name": "personal-details-app",
   "version": "0.1.0",
+  "description": "Simple personal details CRUD app",
+  "author": {
+    "email": "marcextv@outlook.com",
+    "name": "Marcelo Torres Vinueza",
+    "url": "https://www.linkedin.com/in/marcelo-torres-vinueza-9496a138"
+  },
+  "license": "Apache Version 2.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "docs:build": "node docs.js && vuepress build docs",
+    "docs:dev": "node docs.js && vuepress dev docs",
+    "load-template": "node template-loader.js",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -41,6 +52,7 @@
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions"
+    "last 2 versions",
+    "not ie <= 8"
   ]
 }
