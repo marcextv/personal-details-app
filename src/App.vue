@@ -44,13 +44,15 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+//import HelloWorld from './components/HelloWorld';
+import MainVue from './components/MainVue';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    //HelloWorld,
+    MainVue
   },
 
   data: () => ({
