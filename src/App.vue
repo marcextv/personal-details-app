@@ -1,22 +1,17 @@
 <template>
   <v-app>
     <v-content>
-      <MainVue/>
+      <v-toolbar>
+        <v-toolbar-title>Personal Details</v-toolbar-title>
+        <v-spacer />
+      </v-toolbar>
+      <router-view v-if="$root.channelClientState=='Connected'"/>
+      <div class="px-5 py-5 text-xs-center" v-else>
+        <v-progress-circular indeterminate color="primary"/>
+        <span class="pl-2 title">
+          {{ $root.channelClientState }}...
+        </span>
+      </div>
     </v-content>
   </v-app>
 </template>
-
-<script>
-import MainVue from './components/MainVue';
-
-export default {
-  name: 'App',
-
-  components: {
-    MainVue
-  },
-
-  data: () => ({
-  }),
-};
-</script>
